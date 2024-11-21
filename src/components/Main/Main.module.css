@@ -1,0 +1,5 @@
+.main {
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  margin: 72px auto 0;
+}

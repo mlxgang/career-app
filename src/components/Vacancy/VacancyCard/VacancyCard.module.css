@@ -1,0 +1,89 @@
+.card {
+  position: relative;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--base-gap) / 2);
+}
+
+.card:hover {
+  box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  margin-right: 48px;
+  display: flex;
+  gap: var(--base-gap);
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+}
+
+.hide {
+  top: 32px;
+  right: 32px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+.hide-icon {
+}
+
+.card:hover .hide {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--base-gap) / 2);
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.company-name, .city {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  color: var(--color-blue-dark);
+}
+
+.hide-icon {
+  height: 16px;
+  width: 16px;
+  color: var(--color-grey-light)
+}
+
+.experience span {
+  font-size: 12px;
+  line-height: 16px;
+}

@@ -1,0 +1,14 @@
+.item {
+  color: var(--color-grey-light);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.item:not(.active):hover {
+  color: var(--color-blue-light);
+}
+
+.active {
+  color: var(--color-blue-dark);
+}

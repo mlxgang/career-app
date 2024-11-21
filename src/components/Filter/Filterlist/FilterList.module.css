@@ -1,0 +1,11 @@
+.list {
+  padding: 48px 80px 32px;
+  display: flex;
+  gap: var(--base-gap);
+}
+
+@media (max-width: 1279px) {
+  .list {
+    padding: 48px 40px 32px;
+  }
+}

@@ -1,0 +1,14 @@
+:root {
+  --color-white-light: rgba(249, 249, 249, 1);
+  --color-white-dark: rgba(246, 246, 246, 1);
+  --color-black-dark: rgba(32, 32, 32, 1);
+  --color-grey-light: rgba(197, 197, 197, 1);
+  --color-grey-black: rgba(116, 116, 116, 1);
+  --color-blue-light: rgba(140, 174, 224, 1);
+  --color-blue-dark: rgba(92, 137, 206, 1);
+
+  --base-gap: 32px;
+
+  --min-width: 1024px;
+  --max-width: 1280px;
+}
