@@ -1,15 +1,13 @@
-import { VacancyList } from '../VacancyList/VacancyList';
+import data from '@/mock/cardListData.json';
+import { VacancyCard } from '@components/Vacancy/VacancyCard/VacancyCard';
 import cl from './VacancyBlock.module.css'
 
 export const VacancyBlock = () => {
   return (
-    <section className={cl.block}>
-      <time dateTime="2024-02-05">
-        <h2>
-          Сегодня, 5 февраля
-        </h2>
-      </time>
-      <VacancyList/>
-    </section>
+    <ul className={cl.list}>
+      {data.map(card =>
+        <VacancyCard card={card} key={card.company}/>
+      )}
+    </ul>
   )
 }

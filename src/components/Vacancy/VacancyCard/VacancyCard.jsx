@@ -1,5 +1,4 @@
-import icons12 from '@assets/icons-12.svg?url'
-import icons16 from '@assets/icons-16.svg?url'
+import { Icon } from '@components/Icon/Icon';
 import cl from './VacancyCard.module.css'
 
 /**
@@ -26,9 +25,7 @@ export const VacancyCard = ({ card }) => {
           </header>
           
           <button className={cl.hide}>
-            <svg className={cl['hide-icon']}>
-              <use href={`${icons16}#hide`}></use>
-            </svg>
+            <Icon size={16} iconName="hide" className={cl['hide-icon']}/>
           </button>
           
           <section className={cl.footer}>
@@ -37,9 +34,7 @@ export const VacancyCard = ({ card }) => {
               <a className={cl.city} href="#">{card.location}</a>
             </address>
             <div className={cl.experience}>
-              <svg className={cl.icon}>
-                <use href={`${icons12}#experience`}></use>
-              </svg>
+              <Icon size={12} iconName="experience" className={cl.icon}/>
               <span>{card.experience}</span>
             </div>
           </section>

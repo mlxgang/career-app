@@ -1,17 +1,6 @@
-.block {
-  padding: 32px 80px;
-  display: flex;
-  flex-direction: column;
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--base-gap);
-}
-
-h2 time {
-  font-size: inherit;
-  line-height: inherit;
-}
-
-@media (max-width: 1279px) {
-  .block {
-    padding: 32px 40px;
-  }
 }

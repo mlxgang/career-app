@@ -1,5 +1,4 @@
-import icons12 from '@assets/icons-12.svg?url';
-import icons16 from '@assets/icons-16.svg?url';
+import { Icon } from '@components/Icon/Icon';
 import { cls } from '@utils/classJoin';
 import cl from './FilterItem.module.css'
 
@@ -13,21 +12,21 @@ import cl from './FilterItem.module.css'
 
 export const FilterItem = ({ iconName, type, text }) => {
   return (
-    <label className={cls('block', cl.wrapper)}>
-      <svg className={cl.icon}>
-        <use href={icons16 + '#' + iconName}></use>
-      </svg>
+    <>
       {type === 'input' &&
-        <input className={cl.item} placeholder={text}/>
+        <label className={cls('block', cl.wrapper)}>
+          <Icon size={16} iconName={iconName} className={cl.icon}/>
+          <input className={cl.item} placeholder={text}/>
+        </label>
+        
       }
       {type === 'dropdown' &&
-        <>
+        <div className={cls('block', cl.wrapper)}>
+          <Icon size={16} iconName={iconName} className={cl.icon}/>
           <span className={cl.item}>{text}</span>
-          <svg className={cl['dropdown-icon']}>
-            <use href={icons12 + '#chevron'}></use>
-          </svg>
-        </>
+          <Icon size={12} iconName="chevron" className={cl['dropdown-icon']}/>
+        </div>
       }
-    </label>
+    </>
   )
 }
